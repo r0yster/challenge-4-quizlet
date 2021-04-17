@@ -13,7 +13,7 @@ body,
 
 body {
     font-family: sans-serif;
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(0, 76, 239);
 }
 
 .wrapper {
@@ -55,7 +55,7 @@ header button {
 
 footer {
     margin-top: 15px;
-/*    border-top: 3px solid; */
+    border-top: 3px solid; 
     color: slategray;
     border-color: slategray;
     padding-left: 17px;
@@ -63,21 +63,25 @@ footer {
     font-size: 30px;
 }
 
-.card button{
+.card-button {
     border: none;
     background-color: rgb(94, 22, 122);
     border-radius: 11px;
     box-shadow: rgba(0,0,0,0.1) 0px 1px 6px 0px rgba(0,0,0,0.2) 0px 1px 1px 0px;
     color: hsl(0, 0%, 100%);
-    display: inline-block;
+    display: flex;
     font-size: 22px;
     line-height: 11px;
-    margin: 4px 16px 4px 20px;
+    margin: 8px 16px 4px 20px;
     width: 27%;
     padding: 14px 24px;
     text-align: left;
     cursor: pointer;
     outline: none;
+}
+
+.card button:hover {
+    box-shadow: -3px 3px teal;
 }
 
 @media (max-width: 690px) {
