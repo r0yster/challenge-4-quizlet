@@ -1,5 +1,6 @@
 *  {
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html,
@@ -12,13 +13,44 @@ body,
 
 body {
     font-family: sans-serif;
-    background-color: rgb(252, 252, 252);
+    background-color: rbg(255, 255, 255);
 }
 
 .wrapper {
+    margin-top: 20px;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+header {  
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ /*   padding-right: 100px;
+    padding-left: 40px;
+    width: 1000px;*/
+}
+
+.timer {
+    font-size: 18px;
+}
+
+.button {
+    border: none;
+    background-color: rgb(94, 22, 122);
+    border-radius: 11px;
+    box-shadow: rgba(0,0,0,0.1) 0px 1px 6px 0px rgba(0,0,0,0.2) 0px 1px 1px 0px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    font-size: 22px;
+    line-height: justify;
+    margin: 8px 16px 4px 20px;
+    width: 400px;
+    padding: 14px 24px;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
 }
 
 .card {
@@ -28,29 +60,86 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: hsl(206, 17%, 28%);
     font-size: 18px;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 30px 40px;
+    margin: 50px auto;
+    max-width: 1000px;
+    height: auto;
+    padding: 30px 80px;
 }
 
-.card-footer {
+.end-card {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(206, 17%, 28%);
+    font-size: 20px;
+    margin: 50px auto;
+    max-width: 1000px;
+    height: auto;
+    padding: 30px 80px;
     text-align: center;
 }
 
-.btn {
+.end-card button {
     border: none;
     background-color: rgb(94, 22, 122);
     border-radius: 11px;
     box-shadow: rgba(0,0,0,0.1) 0px 1px 6px 0px rgba(0,0,0,0.2) 0px 1px 1px 0px;
     color: hsl(0, 0%, 100%);
-    display: inline-block;
-    font-size: 22px;
-    line-height: 11px;
-    margin: 4px 16px 4px 20px;
-    width: 27%;
-    padding: 14px 24px;
-    text-align: left;
+    font-size: 23px;
+    line-height: 5px;
+    margin: 8px 16px 4px 20px;
+    padding: 14px 30px;
+    text-align: center;
     cursor: pointer;
+    outline: none;
+}
+
+.end-card input {
+    border: none;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 8px 0px;
+    font-size: 22px;
+    width: 65px;
+    outline: none;
+}
+
+.scores {
+    background-color: blue;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+    background-color: lightslategray;
+    font-weight: bold;
+}
+
+.scores th {
+    width: 200px;
+    border: 2px solid black;
+    background-color: rgb(94, 22, 122);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin: 50px auto;
+}
+
+.scores tr, td{
+    border: 2px solid black;
+}
+
+.scores tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 3px solid; 
+    color: slategray;
+    border-color: slategray;
+    padding-left: 17px;
+    width: 500px;
+    font-size: 30px;
+}
+
+.wrapper button:hover {
+    box-shadow: -3px 3px darkcyan;
 }
 
 @media (max-width: 690px) {
