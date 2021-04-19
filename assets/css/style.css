@@ -27,9 +27,13 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-right: 100px;
+ /*   padding-right: 100px;
     padding-left: 40px;
-    font-size: 1.5vw;
+    width: 1000px;*/
+}
+
+.timer {
+    font-size: 18px;
 }
 
 .button {
@@ -45,7 +49,7 @@ header {
     width: 27%;
     padding: 14px 24px;
     text-align: center;
-    cursor: left;
+    cursor: pointer;
     outline: none;
 }
 
